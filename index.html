@@ -82,7 +82,6 @@
             border-right: 5px solid #1f2a44;
         }
 
-        /* Fun, angled corner effects for the section */
         section:before, section:after {
             content: '';
             position: absolute;
@@ -108,17 +107,23 @@
             line-height: 1.6;
         }
 
-        /* Placeholder styling for projects and theses */
-        .placeholder {
-            background-color: #f2f3f5;
-            border: 2px dashed #b0b5bd;
+        .thesis {
+            margin-bottom: 20px;
             padding: 20px;
+            border-left: 4px solid #00b3b3;
+            background-color: #f2f3f5;
             border-radius: 10px;
-            margin-top: 20px;
-            text-align: center;
-            font-style: italic;
         }
 
+        .thesis a {
+            text-decoration: none;
+            color: #1f2a44;
+            font-weight: bold;
+        }
+
+        .thesis a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -139,8 +144,15 @@
 
     <section>
         <h2>Theses</h2>
-        <div class="placeholder">Thesis 1 - Placeholder</div>
-        <div class="placeholder">Thesis 2 - Placeholder</div>
+
+        <div class="thesis">
+            <p><strong><a href="https://github.com/vdrvar/signature-randomization-differential-equations">Master's Thesis</a>:</strong> Reimplemented a machine learning time-series forecasting technique with randomized dimensionality reduction at <strong>Technical University of Munich (TU Munich)</strong>. This work leverages reservoir computing and controlled differential equations to enhance the efficiency of high-dimensional time-series data analysis.</p>
+        </div>
+
+        <div class="thesis">
+            <p><strong><a href="https://github.com/vdrvar/seir-spatial-outbreak-simulation">Bachelor's Thesis</a>:</strong> Developed a C++ model using stochastic methods to simulate the spatial spread of diseases, inspired by the COVID-19 outbreak, at <strong>Ludwig Maximilian University of Munich (LMU Munich)</strong>. The work explores spatial SEIR models and the impact of different intervention strategies.</p>
+        </div>
+
     </section>
 
     <section>
